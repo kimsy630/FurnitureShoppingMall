@@ -1,0 +1,344 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+   
+
+    <style>
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, 
+        big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, 
+        dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, 
+        canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+        }
+		
+        header {
+            width:100%; 
+            height:250px;
+        }
+		
+        header .gnb {/*맨위 매뉴*/
+            width:1200px;
+            height:20px;
+            margin:0 auto;
+        }
+
+        header .gnb li form input {
+        	width: 100px;
+        	height: 20px;
+        }
+        header .gnb ul {
+            width:1200px;
+            height:30px;
+            line-height:30px; 
+			float:right;
+        }
+
+        header .gnb li  {
+            float:right; 
+            list-style:none; 
+            margin-left:20px; 
+            font-size:.9em;
+        }
+
+        header  .gnb a{
+        	color:#5d5d5d; text-decoration:none;
+        }  
+        header  .gnb a:hover{
+        	text-shadow: 0px 0px 2px #5d5d5d;
+        }
+
+        header .logo {
+            position: relative;
+            width:400px; 
+            height:150px;
+			padding-top:10px;
+            margin:0 auto;
+        }
+		header .logo img{
+            position: absolute;
+			width:400px; 
+			height:150px;
+            left:50%; 
+            transform:translate(-50%, 0%);
+		}
+		
+        header .lnb { /*두번째 매뉴 */
+        	font-size:small;
+            width:1190px; 
+            height:30px;
+            padding:5px;
+            border-top:1px solid rgba(93,93,93,0.4);
+            border-bottom:1px solid rgba(93,93,93,0.4);
+            margin: 0 auto;
+            position:absolute;
+            left:50%;
+            transform:translate(-50%, 0%);
+        }
+        header .lnb ul {  display:table; margin: 0 auto;}
+	    header .lnb ul > li {  color:#555555; margin-left:0px; display:inline-block; width:80px;  padding:4px 10px;  text-align:center;position:relative; }
+	    header .lnb ul>li>a:hover{  text-shadow: 0px 0px 0.8px black; }
+	    header .lnb ul>li ul {  display:none; position:absolute; left:-20px; top: 25px;}
+	    header .lnb ul>li:hover ul{ display:inline-block;  }
+	    header .lnb ul>li ul>li { color:#555555; width:120px;  text-align:center; }
+    	header .lnb ul>li ul> li:hover {}
+        #content {
+            width:1200px; margin:0 auto;
+        }
+
+        #content .section1 {
+            overflow:hidden;
+            width:1200px; 
+            height:200px; 
+            margin:0 auto;
+            border:1px solid #cccccc;
+        }
+
+        #content .section1 div {
+            height:200px; float:left; 
+            text-align:center;
+        }
+        
+        #content .section2 div {
+            margin-top:10px;
+            width:1200px;
+             height:310px; 
+             text-align:center;
+            /*box-sizing:border-box;*/
+        }
+
+        #content .hit_product {
+           /*  overflow:hidden; */
+        }
+		#content .hit_product_title1{
+			font-family:vertical;
+			font-size: large;
+		}
+		#content .hit_product_title2{
+			font-size: small;
+			color:#555555;
+		}
+        #content .hit_product ul li {
+            list-style:none;
+            float:left; 
+            margin:0 7px 0 0;
+            width:291px;
+            height:380px;
+            border-radius :10px;
+        }
+        #content .hit_product ul li:first-child {
+            margin-left:7px;
+        }
+        #content .hit_product ul li a{
+            text-decoration: none;
+            font-size:small;
+            color:#b9cec8;
+            font-weight: bold;
+        }
+         #content .hit_product ul li a:link { 
+	         color: #5d5d5d;
+	          text-decoration: none;
+          }
+		 #content .hit_product ul li a:visited {
+			  color: #5d5d5d; 
+			  text-decoration: none;
+		  }
+		 #content .hit_product ul li a:hover { 
+			 text-shadow: 0px 0px 0.8px #5d5d5d;
+			 font-weight:bolder; 
+			 color: #5d5d5d; 
+			 text-decoration: none;
+		 }
+        
+		#content .hit_product ul li a img{
+        	width: 290px;
+        	height: 290px;
+        }
+        #content .hit_product ul li a hr{
+ 			 border-width: 0px;
+    		 height: 0.1px;
+ 			 background-color:rgba(93,93,93,0.75);
+ 			 
+        }
+        #content .md_product {
+            overflow:hidden;
+        }
+        #content .md_product ul li {
+            list-style:none; 
+            float:left; 
+            margin:0 7px 0 0;
+            width:240px; 
+            /*border:1px solid #cccccc; */
+            box-sizing:border-box;
+        }
+        #content .md_product ul li:first-child {
+            margin-left:7px;
+        }
+        
+        footer {
+            width:1200px; 
+            height:310px; 
+            margin:20px auto 0;
+            overflow:hidden;
+        }
+
+        footer div {
+            float:left; 
+            height:150px;
+            border:1px solid #cccccc;
+            box-sizing:border-box;
+        }
+
+        footer div:first-child {
+         	border-radius:7px 0px 0px 7px;
+            width:300px;
+            padding-top: 20px;
+        }
+        footer .office_logo img{
+            width:300px;
+            height:120px;
+        }
+
+        footer div:nth-child(2) {
+            width:550px;
+            padding: 40px;
+         	font-size: small;
+        }
+
+        footer div:nth-child(3) {
+            width:350px;
+         	border-radius:0px 7px 7px 0px;
+         	padding: 30px;
+         	letter-spacing:3px;
+         	font-size: x-small;
+        }
+        footer div:nth-child(3) strong{
+         	font-weight: bold;
+         	font-size: small;
+        }
+
+        footer div:last-child {
+            width:1200px; 
+            height:50px; 
+            margin:10px auto 0;
+            background-color:#5d5d5d;
+            color:#ffffff;
+            text-align:center; 
+            line-height:50px;
+            clear:both; 
+            border:0;
+            color:#b9cec8
+        }
+    </style>
+
+</head>
+<body>
+	
+    <header>
+        <div class="gnb">
+        	
+            <ul>
+            	<li>
+                	<form action="" method="get"><!--검색하면 넘어갈 페이지  -->
+						<input type="text" name="search" placeholder="검색"><!-- 힌트 -->
+						<button type="submit">검색</button>
+					</form>
+                </li>
+                <li><a href="#" alt="">Login</a></li>
+                <li><a href="#" alt="">Join Us</a></li>
+                <li><a href="#" alt="">Wish List</a></li>
+                <li><a href="#" alt="">Cart</a></li>
+                <li><a href="#" alt="">Order</a></li>
+                <li><a href="#" alt="">Mypage</a></li>
+                <li><a href="#" alt="">Notice</a></li>
+                <li><a href="#" alt="">QnA</a></li>
+                <li><a href="#" alt="">Review</a></li>
+                <li><a href="#" alt="">Favorite</a></li>
+                
+            </ul>
+            
+            
+        </div>
+        <div class="logo"> <img src="../images/logo/logo2.jpg"></div>
+        <div class="lnb">
+            <ul>
+		         <li><a>침실가구</a>
+		            <ul class ="menu1_s submenu">
+		               <li><a>침대</a></li>
+		               <li><a>화장대</a></li>
+		            </ul>
+		         </li>
+		         <li><a>주방가구</a>
+		            <ul class ="menu2_s submenu">
+		               <li><a>식탁</a></li>
+		               <li><a>식탁의자</a></li>
+		            </ul>
+		         </li>
+		         <li><a>거실가구</a>
+		            <ul class ="menu3_s submenu"> 
+		               <li><a>소파</a></li>
+		               <li><a>소파탁자</a></li>
+		            </ul>
+		         </li>
+		         <li><a>Livingroom</a>
+		            <ul class ="menu3_s submenu"> 
+		               <li><a>sofa</a></li>
+		               <li><a>table</a></li>
+		            </ul>
+		         </li>
+	      	</ul>
+        </div>
+    </header>
+    <div id="content">
+		<div class="section1">
+		<div>
+		</div>
+		<div>
+			<ul>
+				<li>침대(10)</li>
+				<li>매트리스(5)</li>
+				<li>화장대(7)</li>
+				<li>협탁(8)</li>
+			</ul>
+		</div>
+		</div> 
+        <div class="section2">
+            <div class="hit_product">
+            	  <ul>
+                    <li><a href="#" alt=""><img  src="../images/bed/bed1a.jpg">로사 침대 퀸 [그레이빈티지]<br><hr>1,000,000원</a></li>
+                    <li><a href="#" alt=""><img src="../images/bed/bed2a.jpg">로사 침대 퀸 [브라운]<br><hr>900,000원</a></li>
+                    <li><a href="#" alt=""><img  src="../images/bed/bed3a.jpg">벨라 침대 퀸 [모던 브라운]<br><hr>1,200,000원</a></li>
+                    <li><a href="#" alt=""><img  src="../images/bed/bed4a.jpg">클레어 침대 킹 [그레이 빈티지]<br><hr>1,500,000원</a></li>
+                    <li><a href="#" alt=""><img  src="../images/bed/bed1a.jpg">로사 침대 퀸 [그레이빈티지]<br><hr>1,000,000원</a></li>
+                    <li><a href="#" alt=""><img src="../images/bed/bed2a.jpg">로사 침대 퀸 [브라운]<br><hr>900,000원</a></li>
+                    <li><a href="#" alt=""><img  src="../images/bed/bed3a.jpg">벨라 침대 퀸 [모던 브라운]<br><hr>1,200,000원</a></li>
+                    <li><a href="#" alt=""><img  src="../images/bed/bed4a.jpg">클레어 침대 킹 [그레이 빈티지]<br><hr>1,500,000원</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="office_logo"> <img src="../images/logo/logo2.jpg"></div>
+        <div class="office_adress">
+       	신한은행 110-221-461256<br>
+       	예금주 : 김세엽 
+        <br>(주)Yeopse<br>
+        (153-759) 서울시 관악구 신림로 68길 28-6 월드오피스텔 303호</div>
+        <div class="shopping_info">
+        			<strong>고객만족센터</strong><br>
+					☎070-1236-4562<br>
+					<strong>평일</strong>오전 09:00 ~ 오후 06:00<br>
+					<strong>점심</strong>오후 12:00 ~ 오후 01:00<br>
+					휴무일요일 휴무<br>
+		</div>
+        <div class="copyright">COPYRIGHT © 2021 김세엽. ALL RIGHTS RESERVED.</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,140 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../css/style.css" type = "text/css">
+<link rel="stylesheet" href="../css/cartstyle.css"  type = "text/css">
+   
+</head>
+<body>
+	
+    <header>
+        <div class="gnb">
+            <ul>
+            	<li>
+                	<form action="" method="get"><!--검색하면 넘어갈 페이지  -->
+						<input type="text" name="search" placeholder="검색"><!-- 힌트 -->
+						<button type="submit">검색</button>
+					</form>
+                </li>
+                <li><a href="../common/login.html" alt="">로그인</a></li>
+                <li><a href="../customer/join.html" alt="">회원가입</a></li>
+                <li><a href="../customer/cart.html" alt="">장바구니</a></li>
+                <li><a href="../customer/mypage.html" alt="">마이페이지</a></li>
+                <li><a href="../customer/Q&A.html" alt="">QnA</a></li>
+                <li><a href="../customer/settlement.html" alt="">관리자페이지</a></li>
+                <!-- <li><a href="#" alt="">Order</a></li>
+                <li><a href="#" alt="">Notice</a></li>
+                <li><a href="#" alt="">QnA</a></li>
+                <li><a href="#" alt="">Review</a></li>
+                <li><a href="#" alt="">Favorite</a></li> -->
+            </ul>
+        </div>
+        <div class="logo"><a href="../index/index.html"><img src="../images/logo/logo2.jpg"></a> </div>
+        <div class="lnb">
+            <ul>
+		         <li><a>침실가구</a>
+		            <ul class ="menu1_s submenu">
+		               <li><a>침대</a></li>
+		               <li><a>화장대</a></li>
+		            </ul>
+		         </li>
+		         <li><a>주방가구</a>
+		            <ul class ="menu2_s submenu">
+		               <li><a>식탁</a></li>
+		               <li><a>식탁의자</a></li>
+		            </ul>
+		         </li>
+		         <li><a>거실가구</a>
+		            <ul class ="menu3_s submenu"> 
+		               <li><a>소파</a></li>
+		               <li><a>소파탁자</a></li>
+		            </ul>
+		         </li>
+		         <li><a>Livingroom</a>
+		            <ul class ="menu3_s submenu"> 
+		               <li><a>sofa</a></li>
+		               <li><a>table</a></li>
+		            </ul>
+		         </li>
+	      	</ul>
+        </div>
+    </header>
+    <div id="content">
+    	<form action="login.html" method="post" class="loginInfo">
+    		<fieldset>
+    			<div class="carttitle">일반상품</div>
+    			<table cellspacing="0" class="cartInfo">
+    				<tr class="textMenu">
+    					<td><input type="checkbox" name="chioce" value="all"></td>
+    					<td>이미지</td>
+    					<td>상품정보</td>
+    					<td>판매가</td>
+    					<td>수량</td>
+    					<td>적립금</td>
+    					<td>배송구분</td>
+    					<td>배송비</td>
+    					<td>합계</td>
+    					<td>선택</td>	
+    				</tr>
+    				<tr>
+    					<td><input type="checkbox" name="chioce" value="손님 장바구니 코드? 아니면 여기서받은for문 번호"></td>
+    					<td><a href="../common/products.html"><img  src="../images/bed/bed1a.jpg"></a></td>
+    					<td>로사 침대 퀸 [그레이빈티지]</td>
+    					<td>1,000,000원</td>
+    					<td>2</td>
+    					<td>20,000</td>
+    					<td>기본배송</td>
+    					<td>무료</td>
+    					<td>2,000,000원</td>
+    					<td>
+    						<input type="submit" value="주문하기">
+    						<input type="submit" value="삭제">
+    					</td>	
+    				</tr>
+    				<tr>
+    					<td><input type="checkbox" name="chioce" value="손님 장바구니 코드? 아니면 여기서받은for문 번호"></td>
+    					<td><a href="../common/products.html"><img  src="../images/bed/bed2a.jpg"></a></td>
+    					<td>로사 침대 퀸 [브라운]</td>
+    					<td>900,000원</td>
+    					<td>3</td>
+    					<td>27,000</td>
+    					<td>기본배송</td>
+    					<td>무료</td>
+    					<td>2700,000원</td>
+    					<td>
+    						<input type="submit" value="주문하기">
+    						<input type="submit" value="삭제">
+    					</td>	
+    				</tr>
+    				<tr>
+    					<td colspan="10">
+    						<input type="submit" value="전체상품주문">
+    						<input type="submit" value="선택상품주문">
+    					</td>
+    				</tr>
+    			</table>
+    		</fieldset>
+    	</form>
+    </div>
+    <footer>
+        <div class="office_logo"> <img src="../images/logo/logo2.jpg"></div>
+        <div class="office_adress">
+       	신한은행 110-221-461256<br>
+       	예금주 : 김세엽 
+        <br>(주)Yeopse<br>
+        (153-759) 서울시 관악구 신림로 68길 28-6 월드오피스텔 303호</div>
+        <div class="shopping_info">
+        			<strong>고객만족센터</strong><br>
+					☎070-1236-4562<br>
+					<strong>평일</strong>오전 09:00 ~ 오후 06:00<br>
+					<strong>점심</strong>오후 12:00 ~ 오후 01:00<br>
+					휴무일요일 휴무<br>
+		</div>
+        <div class="copyright">COPYRIGHT © 2021 김세엽. ALL RIGHTS RESERVED.</div>
+    </footer>
+</body>
+</html>

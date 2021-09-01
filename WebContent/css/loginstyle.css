@@ -1,0 +1,79 @@
+@charset "UTF-8";
+header {
+    width:100%;
+	max-width:1200px;
+    height:300px;
+}
+#content {
+    width:100%;
+    max-width:1200px; 
+    height:500px; 
+    margin:0 auto;
+}
+
+#content .loginInfo {
+    width:100%;
+    max-width:300px; 
+    height:auto; 
+    margin: 0 auto;
+}
+#content .loginInfo div{
+	height:50px;
+}
+#content .loginInfo div:nth-child(1){
+font-weight:bold;
+    width:100%;
+    max-width:300px; 
+    text-align:center;
+    font-size:3em;
+    margin-top: 70px;
+}
+#content .loginInfo div:nth-child(2){
+	font-weight:bold;
+    width:100%;
+    max-width:300px; 
+    margin:0 auto;
+    text-align:center;
+	color:gray;
+    font-size:1.1em;
+}
+#content .loginInfo div:nth-child(n+3){
+	display: inline-block;
+    width:300px; 
+    margin:0 auto;
+    text-align:center;
+}
+#content .loginInfo div:nth-child(3) input{/*아이디input  */
+	width: 300px;
+	height: 40px;
+    border:1px solid white;
+    border-bottom: 1px solid #cccccc;
+    font-size:1.1em;
+}
+#content .loginInfo div:nth-child(4) input{/*비밀번호input  */
+	width: 300px;
+	height: 40px;
+    border:1px solid white;
+    border-bottom: 1px solid #cccccc;
+    font-size:1.1em;
+}
+#content .loginInfo div:nth-child(5) input{/*로그인버튼  */
+     	width: 300px;
+     	height: 40px;
+         border:1px solid white;
+background-color:black;
+         font-size:1.1em;
+         color:white;
+     }
+     #content .loginInfo div:nth-child(6) hr{
+     	width:300px;
+     	background-color: #cccccc;
+     
+     }
+     #content .loginInfo div:nth-child(6) a{
+     	width: 500px;
+     	height: 40px;
+         font-size:1.1em;
+         color:#777777;
+         display: inline;
+     }

@@ -1,0 +1,198 @@
+@charset "UTF-8";
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, 
+        big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, 
+        dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, 
+        canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+        }
+		a{
+            text-decoration: none;
+            color:#555555;
+            display:block;
+		}
+        header .gnb {/*맨위 매뉴*/
+            width:100%;
+            max-width:1200px;
+            height:30px;
+            position:absolute;
+            left:50%;
+            transform:translate(-50%, 0%);
+        }
+
+        header .gnb li form input {
+        	width: 100px;
+        	height: 20px;
+        }
+        header .gnb ul {
+            width:100%;
+            max-width:1200px; 
+			float:right;
+        }
+
+        header .gnb li  {
+            float:right; 
+            list-style:none; 
+            margin-left:16px; 
+            font-size:.9em;
+        }
+
+        header  .gnb a{
+        	color:#5d5d5d; text-decoration:none;
+        }  
+        header  .gnb a:hover{
+        	text-shadow: 0px 0px 2px #5d5d5d;
+        }
+
+        header .logo {
+            width:100%;
+            max-width:1200px; 
+            height:150px;
+			padding-top:10px;
+            margin:0 auto;
+            margin-top:15px;
+            position:absolute;
+            margin-top:30px;
+            left:50%;
+            transform:translate(-50%, 0%);
+        }
+		header .logo img{
+            position: absolute;
+			width:400px; 
+			height:150px;
+            left:50%; 
+            transform:translate(-50%, 0%);
+		}
+		
+        header .lnb { /*두번째 매뉴 */
+        	text-decoration:none;
+        	font-size:small;
+        	
+        	width:100%;
+            max-width:1190px; 
+            height:30px;
+            padding:5px;
+            border-top:1px solid rgba(93,93,93,0.4);
+            border-bottom:1px solid rgba(93,93,93,0.4);
+            margin: 0 auto;
+            position:absolute;
+            margin-top:200px;
+            left:50%;
+            transform:translate(-50%, 0%);
+        }
+		header .lnb ul { display:table; margin: 0 auto;}
+	    header .lnb ul > li {  color:#555555; margin-left:0px; display:inline-block; width:80px;  padding:4px 10px;  text-align:center;position:relative; }
+	    header .lnb ul>li>a:hover{  text-shadow: 0px 0px 0.8px black; }
+	    header .lnb ul>li ul {  display:none; position:absolute; left:-22px; top: 25px;}
+	    header .lnb ul>li:hover ul{ display:inline-block;  }
+	    header .lnb ul>li ul>li { color:#555555; width:120px;  text-align:center; }
+    	header .lnb ul>li ul> li:hover {}  
+         header .lnb ul a{color:#555555; }      
+    	#content {
+            width:100%;
+            max-width:1200px; 
+            margin:0 auto;
+            overflow:auto;
+            box-sizing: border-box;
+           /*  display: inline-block ;
+            position:relative;
+            left:50%; 
+            transform:translate(-50%, 0%); */
+		}
+        
+        #content .hit_product ul li a{
+            text-decoration: none;
+            font-size:small;
+            color:#b9cec8;
+            font-weight: bold;
+        }
+         #content .hit_product ul li a:link { 
+	         color: #5d5d5d;
+	          text-decoration: none;
+          }
+		 #content .hit_product ul li a:visited {
+			  color: #5d5d5d; 
+			  text-decoration: none;
+		  }
+		 #content .hit_product ul li a:hover { 
+			 text-shadow: 0px 0px 0.8px #5d5d5d;
+			 font-weight:bolder; 
+			 color: #5d5d5d; 
+			 text-decoration: none;
+		 }
+        #content .hit_product ul li a hr{
+ 			 border-width: 0px;
+    		 height: 0.1px;
+ 			 background-color:rgba(93,93,93,0.75);
+        }
+        #content .hit_product {
+           /*  overflow:hidden; */
+        }
+        footer {
+            width:100%;max-width:1200px; 
+            height:310px; 
+            margin:0px auto;
+        }
+		.offiecTop{
+            width:100%;max-width:1200px; 
+			height:auto;
+			overflow: auto;
+			margin: 0 auto;
+			borde:0px;
+		}
+        footer div {
+            float:left; 
+            height:150px;
+            box-sizing:border-box;
+        }
+
+        .office_logo {
+            border:1px solid #cccccc;
+         	border-radius:7px 0px 0px 7px;
+         	width:25%;
+            max-height:200px;
+            padding-top: 20px;
+        }
+        footer .office_logo img{
+            width:100%;
+            max-width:300px;
+            height:120px;
+        }
+
+        .office_adress {
+            border:1px solid #cccccc;
+            width:50%;
+            padding: 3%;
+         	font-size: small;
+        }
+
+        .shopping_info {
+            border:1px solid #cccccc;
+            width:25%;
+         	border-radius:0px 7px 7px 0px;
+         	padding-top: 1.9%;
+         	padding-left: 1.9%;
+         	letter-spacing:3px;
+         	font-size: x-small;
+         	overflow: auto;
+        }
+        .shopping_info strong{
+         	font-weight: bold;
+         	font-size: small;
+        }
+
+        .copyright {
+            border:1px solid #cccccc;
+            width:100%;max-width:1200px; 
+            height:50px; 
+            background-color:#5d5d5d;
+            color:#ffffff;
+            text-align:center; 
+            line-height:50px;
+            clear:both; 
+            border:0;
+            color:#b9cec8
+        }

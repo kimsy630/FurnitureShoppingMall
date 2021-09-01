@@ -1,0 +1,74 @@
+@charset "UTF-8";
+ul{text-decoration: none;}
+header {
+    width:100%;
+	max-width:1200px;
+    height:300px;
+}
+.buyInfo {
+    width:100%;
+	max-width:1200px;
+	text-align: center;
+	overflow: auto;
+	box-sizing: border-box;
+}
+.buytitle{
+    width:100%;
+	max-width:1180x;
+	height:auto;
+	font-size:large;
+	font-weight:bold;
+	padding-top:10px;
+	padding-left:10px;
+	background-color:#f6f6f6;
+	border-top: 1px solid #d7d5d5;
+	border-left: 1px solid #d7d5d5;
+	border-right: 1px solid #d7d5d5;
+	box-sizing: border-box;
+}
+.buyInfo tr{
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.buyInfo tr td{
+	overflow: hidden;
+	box-sizing: border-box;
+	border-top: 1px solid #d7d5d5;
+	border-bottom: 1px solid #d7d5d5;
+}
+.buyInfo tr td:first-child{
+	width: 20%;
+}
+.buyInfo tr td:nth-child(2){
+	width: 40%;
+}
+.buyInfo tr td:nth-child(3){
+	width: 10%;
+}
+.buyInfo tr td:nth-child(4){
+	width: 5%;
+}
+.buyInfo tr td:nth-child(5){
+	width: 20%;
+}
+.buyInfo tr td:nth-child(6){
+	width: 5%;
+}
+.buyInfo tr:not(:first-child) td:first-child img{
+	width: 100%;
+	height: 100%;
+	padding:5px;
+}
+.buyInfo tr:not(:first-child) td:last-child input{
+	width: 90%;
+	height:40px;
+	display: block;
+	margin: 0 auto;
+	color:white;	
+	background-color: #4a5164;
+	border-radius: 5px;
+	border-bottom: 1px solid #d7d5d5;
+}
+.buyInfo tr:not(:first-child) td:last-child input{
+	background-color: #43495a;
+}

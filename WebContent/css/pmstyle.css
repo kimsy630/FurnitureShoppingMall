@@ -1,0 +1,140 @@
+@charset "UTF-8";
+ul{text-decoration: none;}
+header {
+    width:100%;
+	max-width:1200px;
+    height:300px;
+}
+.PMInfo {
+    width:100%;
+	max-width:1200px;
+	text-align: center;
+	overflow: auto;
+	box-sizing: border-box;
+}
+.PMtitle{
+    width:100%;
+	max-width:1180x;
+	height:auto;
+	padding-top:10px;
+	padding-left:10px;
+	background-color:#f6f6f6;
+	border-top: 1px solid #d7d5d5;
+	border-left: 1px solid #d7d5d5;
+	border-right: 1px solid #d7d5d5;
+	box-sizing: border-box;
+	overflow: auto;
+}
+.PMtitle div:first-child{
+	font-size:large;
+	font-weight:bold;
+	float:left;
+}
+.addlink{
+	float:right;
+	font-size:small;
+	font-weight:bold;
+	color:white;
+	text-decoration: none;
+	padding: 7px 17px 7px 17px;
+}
+.PMtitle div:nth-child(2){
+	margin-right: 15px;
+	margin-left: 15px;
+	font-size:large;
+	font-weight:bold;
+	float:right;
+	border: 1px solid #d7d5d5;
+	background-color: #4a5164;
+}
+.PMtitle div:nth-child(2):hover{
+	background-color: #43495a;
+}
+.PMtitle div:nth-child(3){
+	float:right;
+	
+}
+.scrollTable{
+    width:100%;
+	max-width:1200px;
+	height:600px;
+	text-align: center;
+	overflow: scroll;
+	box-sizing: border-box;
+	
+}
+.PMtable th{
+    position: sticky;
+    top: 0px;
+    background-color: #d7d5d5 !important;
+}
+.PMtable tr{
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.PMtable tr td{
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.PMtable tr:not(:first-child) td{
+	border-top: 1px solid #d7d5d5;
+	border-bottom: 1px solid #d7d5d5;
+}
+.PMtable tr:not(:first-child) td:first-child{
+	width: 3%;
+}
+.PMtable tr:not(:first-child) td:nth-child(2){
+	width: 7%;
+}
+.PMtable tr:not(:first-child) td:nth-child(2) img{
+	width: 100%;
+	height: auto;
+	padding:5px;
+}
+.PMtable tr:not(:first-child) td:nth-child(3){
+	width: 20%;
+}
+.PMtable tr:not(:first-child) td:nth-child(4){
+	width: 15%;
+}
+.PMtable tr:not(:first-child) td:nth-child(5){
+	width: 7%;
+}
+.PMtable tr:not(:first-child) td:nth-child(6){
+	width: 10%;
+}
+.PMtable tr:not(:first-child) td:nth-child(7){
+	width: 8%;
+}
+.PMtable tr:not(:first-child) td:nth-child(8){
+	width: 7%;
+}
+.PMtable tr:not(:first-child) td:nth-child(9){
+	width: 10%;
+}
+.itbutton{
+    width:100%;
+	max-width:1200px;
+	height: 100px;
+}
+.submitbutton input{
+	color:white;
+	margin:10px;
+	width: 120px;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid #d7d5d5;
+}
+.submitbutton input:first-child {
+	background-color: #4a5164;
+}
+.submitbutton input:first-child:hover{
+	background-color: #43495a;
+}
+
+.submitbutton input:nth-child(2) {
+	background-color: #84868b;
+}
+.submitbutton input:nth-child(2):hover {
+	background-color: #77797d;
+}

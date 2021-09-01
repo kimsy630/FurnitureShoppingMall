@@ -1,0 +1,216 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../css/style.css" type = "text/css">
+<link rel="stylesheet" href="../css/pmstyle.css"  type = "text/css">
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+ <script>
+ $(function(){ 
+	$(".allCheck").click(function(){
+		 if($(".allCheck").prop("checked")) { 
+		 $("input[type=checkbox]").prop("checked",true);
+		 } else { 
+			 $("input[type=checkbox]").prop("checked",false); 
+		} 
+	}) 
+}) 
+</script>
+
+</head>
+<body>
+	
+    <header>
+        <div class="gnb">
+        	
+            <ul>
+            	<li>
+                	<form action="" method="get"><!--검색하면 넘어갈 페이지  -->
+						<input type="text" name="search" placeholder="검색"><!-- 힌트 -->
+						<button type="submit">검색</button>
+					</form>
+                </li>
+                <li><a href="#" alt="../common/login.html">Login</a></li>
+                <li><a href="#" alt="../customer/join.html">Join Us</a></li>
+                <li><a href="#" alt="">Wish List</a></li>
+                <li><a href="#" alt="">Cart</a></li>
+                <li><a href="#" alt="">Order</a></li>
+                <li><a href="#" alt="">Mypage</a></li>
+                <li><a href="#" alt="">Notice</a></li>
+                <li><a href="#" alt="">QnA</a></li>
+                <li><a href="#" alt="">Review</a></li>
+                <li><a href="#" alt="">Favorite</a></li>
+                
+            </ul>
+            
+            
+        </div>
+        <div class="logo"><a href="../index/index.html"><img src="../images/logo/logo2.jpg"></a> </div>
+        <div class="lnb">
+            <ul>
+		         <li><a>침실가구</a>
+		            <ul class ="menu1_s submenu">
+		               <li><a>침대</a></li>
+		               <li><a>화장대</a></li>
+		            </ul>
+		         </li>
+		         <li><a>주방가구</a>
+		            <ul class ="menu2_s submenu">
+		               <li><a>식탁</a></li>
+		               <li><a>식탁의자</a></li>
+		            </ul>
+		         </li>
+		         <li><a>거실가구</a>
+		            <ul class ="menu3_s submenu"> 
+		               <li><a>소파</a></li>
+		               <li><a>소파탁자</a></li>
+		            </ul>
+		         </li>
+		         <li><a>Livingroom</a>
+		            <ul class ="menu3_s submenu"> 
+		               <li><a>sofa</a></li>
+		               <li><a>table</a></li>
+		            </ul>
+		         </li>
+	      	</ul>
+        </div>
+    </header>
+    <div id="content">
+    	<form action="login.html" method="post" class="PMInfo">
+    		<fieldset>
+    			<div class="PMtitle">
+    				<div> 판매상품 </div>
+    				<div> <a href="../mamager/addproducts.html" class="addlink">상품추가</a> </div>
+    				<div>
+	    				<input type="text" name="search"  placeholder="검색">
+	    				<input type="submit" value="검색">
+					</div>
+    			</div>
+    			
+    			<div class="scrollTable">
+	    			<table cellspacing="0" class="PMtable">
+	    				<tr class="textMenu">
+	    					<th><input type="checkbox" class="allCheck" name="chioce" value="all"></th>
+	    					<th>이미지</th>
+	    					<th>상품명</th>
+	    					<th>판매자</th>
+	    					<th>카테고리</th>
+	    					<th>재고수량</th>
+	    					<th>정가</th>
+	    					<th>세일가</th>
+	    					<th>선택</th>	
+	    				</tr>
+	    				<tr>
+	    					<td><input type="checkbox" name="chioce" value="손님 장바구니 코드? 아니면 여기서받은for문 번호"></td>
+	    					<td><a href="../common/products.html"><img  src="../images/bed/bed1a.jpg"></a></td>
+	    					<td>로사 침대 퀸 [그레이빈티지]</td>
+	    					<td>강준우</td>
+	    					<td>침대</td>
+	    					<td>200</td>
+	    					<td>1,000,000원</td>
+	    					<td>X</td>
+	    					<td>
+	    						<input type="submit" value="수정">
+	    						<input type="submit" value="삭제">
+	    					</td>	
+	    				</tr>
+	    				<tr>
+	    					<td><input type="checkbox" name="chioce" value="손님 장바구니 코드? 아니면 여기서받은for문 번호"></td>
+	    					<td><a href="../common/products.html"><img  src="../images/bed/bed2a.jpg"></a></td>
+	    					<td>로사 침대 퀸 [브라운]</td>
+	    					<td>강준우</td>
+	    					<td>침대</td>
+	    					<td>100</td>
+	    					<td>900,000원</td>
+	    					<td>810,000(10%)</td>
+	    					<td>
+	    						<input type="submit" value="수정">
+	    						<input type="submit" value="삭제">
+	    					</td>	
+	    				</tr>
+	    				<tr>
+	    					<td><input type="checkbox" name="chioce" value="손님 장바구니 코드? 아니면 여기서받은for문 번호"></td>
+	    					<td><a href="../common/products.html"><img  src="../images/bed/bed3a.jpg"></a></td>
+	    					<td>로사 침대 퀸 [브라운]</td>
+	    					<td>강준우</td>
+	    					<td>침대</td>
+	    					<td>100</td>
+	    					<td>900,000원</td>
+	    					<td>810,000(10%)</td>
+	    					<td>
+	    						<input type="submit" value="수정">
+	    						<input type="submit" value="삭제">
+	    					</td>	
+	    				</tr>
+	    				<tr>
+	    					<td><input type="checkbox" name="chioce" value="손님 장바구니 코드? 아니면 여기서받은for문 번호"></td>
+	    					<td><a href="../common/products.html"><img  src="../images/bed/bed4a.jpg"></a></td>
+	    					<td>로사 침대 퀸 [브라운]</td>
+	    					<td>강준우</td>
+	    					<td>침대</td>
+	    					<td>100</td>
+	    					<td>900,000원</td>
+	    					<td>810,000(10%)</td>
+	    					<td>
+	    						<input type="submit" value="수정">
+	    						<input type="submit" value="삭제">
+	    					</td>	
+	    				</tr>
+	    				<tr>
+	    					<td><input type="checkbox" name="chioce" value="손님 장바구니 코드? 아니면 여기서받은for문 번호"></td>
+	    					<td><a href="../common/products.html"><img  src="../images/bed/bed5a.jpg"></a></td>
+	    					<td>로사 침대 퀸 [브라운]</td>
+	    					<td>강준우</td>
+	    					<td>침대</td>
+	    					<td>100</td>
+	    					<td>900,000원</td>
+	    					<td>810,000(10%)</td>
+	    					<td>
+	    						<input type="submit" value="수정">
+	    						<input type="submit" value="삭제">
+	    					</td>	
+	    				</tr>
+	    				<tr>
+	    					<td><input type="checkbox" name="chioce" value="손님 장바구니 코드? 아니면 여기서받은for문 번호"></td>
+	    					<td><a href="../common/products.html"><img  src="../images/bed/bed6a.jpg"></a></td>
+	    					<td>로사 침대 퀸 [브라운]</td>
+	    					<td>강준우</td>
+	    					<td>침대</td>
+	    					<td>100</td>
+	    					<td>900,000원</td>
+	    					<td>810,000(10%)</td>
+	    					<td>
+	    						<input type="submit" value="수정">
+	    						<input type="submit" value="삭제">
+	    					</td>	
+	    				</tr>
+	    			</table>
+    			</div>
+    			<div class="submitbutton">
+    				<input type="submit" value="상품추가">
+	 				<input type="submit" value="선택삭제">	
+    			</div>
+    		</fieldset>
+    	</form>
+    </div>
+    <footer>
+        <div class="office_logo"> <img src="../images/logo/logo2.jpg"></div>
+        <div class="office_adress">
+       	신한은행 110-221-461256<br>
+       	예금주 : 김세엽 
+        <br>(주)Yeopse<br>
+        (153-759) 서울시 관악구 신림로 68길 28-6 월드오피스텔 303호</div>
+        <div class="shopping_info">
+        			<strong>고객만족센터</strong><br>
+					☎070-1236-4562<br>
+					<strong>평일</strong>오전 09:00 ~ 오후 06:00<br>
+					<strong>점심</strong>오후 12:00 ~ 오후 01:00<br>
+					휴무일요일 휴무<br>
+		</div>
+        <div class="copyright">COPYRIGHT © 2021 김세엽. ALL RIGHTS RESERVED.</div>
+    </footer>
+</body>
+</html>

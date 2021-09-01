@@ -1,0 +1,152 @@
+@charset "UTF-8";
+.main{
+	width: 100%;
+	max-width:1200px;
+	height: 900px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	border: 0px;
+}
+
+.topPage{
+	width: 100%;
+	max-width:1200;
+	height:auto;
+	background-color: #303c56;
+	box-sizing: border-box;
+	border: 0px;
+	overflow: auto;
+	
+}
+.topPage img{
+	width: 80%;
+	height:auto;
+	margin: 0 auto;
+}
+.topPage a{
+	border: 0px;
+	background-color: #303c56;
+	color:white;
+	text-decoration: none;
+}
+.topPage img:hover{
+	background-color: #525e78;
+	
+}
+.topPage>div{
+	text-align:center;
+	float :left;
+	width:16.6%;
+	max-width:110px;
+	min-width:75px;
+	height: auto;
+	background-color: #303c56;
+	text-align: center;
+}
+.bodyPage{
+	float:right;
+	width: 100%;
+	height:90%;
+	background-color: white;
+	box-sizing: border-box;
+	border: 0px;
+	overflow: auto;
+}
+.bodyleft{
+	width: 100%;
+	max-width:600px;
+	height: auto;
+	float:left;
+	display: inline-block;
+}
+.bodyright{
+	width: 100%;
+	max-width:600px;
+	height: auto;
+	float:left;
+	display: inline-block;
+	overflow: auto;
+}
+.progressMain{
+	width: 100%;
+	height: auto;
+	margin: 40px 0 0 0;
+	background-color: red;
+}
+.progressMain >div{
+	width: 90%;
+	height: auto;
+	float:right;
+}
+.progressText{
+	width:17%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+.progressText2{
+	width:19%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+.progressbar{
+	box-sizing: border-box;
+	width:53%; 
+	height: 30px;
+}
+.count{
+	width: 100%;
+	height:auto;
+	margin: 40px auto 0 auto;
+	overflow: auto;
+}
+.count div{
+	float:left;
+	width:7vw;
+	height:7vw;
+	min-height:100px;
+	min-width:100px;
+	border-radius:50%;
+	text-align:center;
+	vertical-align:middle;
+	line-height:100px;
+	font-size:medium; 
+	color:#fff;
+	border: 2px solid black;
+	box-sizing: border-box;
+}.count div:first-child{
+	margin:0 0 0 15%;
+	background-color:#ef4e46;
+}
+.count div:nth-child(2){
+	margin:0 0 0 2%;
+	background-color:#0095b6;
+}
+.count div:nth-child(3){
+	margin:0 0 0 2%;
+	background-color:#653a56;
+}
+.salesTable{
+	width: 100%;
+	max-width:600px;
+	height: auto;
+	padding-top: 40px;
+}
+.salesTable table{
+	width: 300px;
+	height: 100px;
+	margin: 40px 0px 0px 17%;
+	box-sizing: border-box;
+	text-align:center; 
+	border: 1px solid black;
+}
+.salesTable th{
+	 width: 40%;
+	background-color: #303c56;
+	border: 1px solid black;
+	color:white;
+}
+.salesTable td{
+	 width: 60%;
+	background-color:white;
+	border: 1px solid black;
+}

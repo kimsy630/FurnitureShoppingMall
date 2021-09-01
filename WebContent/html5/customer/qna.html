@@ -1,0 +1,177 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../css/style.css" type = "text/css" >
+<link rel="stylesheet" href="../css/qnastyle.css" type = "text/css" >
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+<script type="text/javascript">
+	$(document).ready(function () {
+		$(".qnatable tr").not( "#hidden" ).click(function () {
+			var nextTr=$(this).next();
+			status = nextTr.css("display"); 
+			if (status == "none") { 
+				nextTr.css("display", ""); 
+			} 
+			else { 
+				nextTr.css("display", "none"); 
+			} 
+		}); 
+	});
+
+</script>
+</head>
+<body>
+	
+    <header>
+		
+        <div class="gnb">
+            <ul>
+            	<li>
+                	<form action="" method="get"><!--검색하면 넘어갈 페이지  -->
+						<input type="text" name="search" placeholder="검색"><!-- 힌트 -->
+						<button type="submit">검색</button>
+					</form>
+                </li>
+                <li><a href="../common/login.html" alt="">로그인</a></li>
+                <li><a href="../customer/join.html" alt="">회원가입</a></li>
+                <li><a href="../customer/cart.html" alt="">장바구니</a></li>
+                <li><a href="../customer/mypage.html" alt="">마이페이지</a></li>
+                <li><a href="../customer/Q&A.html" alt="">QnA</a></li>
+                <li><a href="../customer/settlement.html" alt="">관리자페이지</a></li>
+                <!-- <li><a href="#" alt="">Order</a></li>
+                <li><a href="#" alt="">Notice</a></li>
+                <li><a href="#" alt="">QnA</a></li>
+                <li><a href="#" alt="">Review</a></li>
+                <li><a href="#" alt="">Favorite</a></li> -->
+            </ul>
+        </div>
+        <div class="logo"> <a href="../index/index.html"> <img src="../images/logo/logo2.jpg"></a></div>
+        <div class="lnb">
+            <ul>
+		         <li><a href="../common/category.html?category=침실가구">침실가구</a>
+		            <ul class ="menu1_s submenu">
+		               <li><a href="../common/category.html?category=침대">침대</a></li>
+		               <li><a href="../common/category.html?category=화장대">화장대</a></li>
+		            </ul>
+		         </li>
+		         <li><a href="../common/category.html?category=주방가구">주방가구</a>
+		            <ul class ="menu2_s submenu">
+		               <li><a href="../common/category.html?category=식탁">식탁</a></li>
+		               <li><a href="../common/category.html?category=식탁의자">식탁의자</a></li>
+		            </ul>
+		         </li>
+		         <li><a href="../common/category.html?category=거실가구">거실가구</a>
+		            <ul class ="menu3_s submenu"> 
+		               <li><a href="../common/category.html?category=소파">소파</a></li>
+		               <li><a href="../common/category.html?category=소파탁자">소파탁자</a></li>
+		            </ul>
+		         </li>
+	      	</ul>
+        </div>
+    </header>
+    <div id="content">
+    	<div class="qnaList">
+    		<div class="qnatitle">
+    			<div>Q&A</div>
+				<button>등록</button>
+    		</div>
+    		<table cellspacing="0" class="qnatable">
+    			<tr id="hidden">
+    				<td>번호</td>
+    				<td>제목</td>
+    				<td>작성자</td>
+    				<td>작성일</td>
+    			</tr>
+    			<tr>
+    				<td>4</td>
+    				<td>침대문의</td>
+    				<td>awrrd</td>
+    				<td>2021-01-12</td>
+    			</tr>
+    			<tr  id="hidden" style="display:none;" >
+    				<td colspan="4">
+    					침대 구성에 매트리스포함인가요?
+						가격이 매트리스포함가인지 아닌지 여쭙니다.
+						매트리스포함이라면 매트는 스프링타입인지
+						메모리폼타입인지 알려주세요
+						<div>
+	    					<button>삭제</button>
+	    					<button>수정</button>
+    					</div>
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>3</td>
+    				<td>회원가입했는데~~</td>
+    				<td>awrrd</td>
+    				<td>2021-01-11</td>
+    			</tr>
+    			<tr  id="hidden" style="display:none;" >
+    				<td colspan="4">
+    					회원가입했는데 적립금이 안들어와있어서요~~
+						<div>
+	    					<button>삭제</button>
+	    					<button>수정</button>
+    					</div>
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>2</td>
+    				<td>배송날짜 문의드립니다.</td>
+    				<td>kim</td>
+    				<td>2021-01-11</td>
+    			</tr>
+    			<tr id="hidden" style="display:none;" >
+    				<td colspan="4">
+    					배송언제오나요?
+						<div>
+	    					<button>삭제</button>
+	    					<button>수정</button>
+    					</div>
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>1</td>
+    				<td>재고 문의</td>
+    				<td>jang</td>
+    				<td>2021-01-10</td>
+    			</tr>
+    			<tr  id="hidden" style="display:none;" >
+    				<td colspan="4">
+    					재고 언제들어오나요
+						<div>
+	    					<button>삭제</button>
+	    					<button>수정</button>
+    					</div>
+    				</td>
+    			</tr>
+    			
+    		</table>
+    	</div>
+    </div>
+    <br><br>
+    <footer>
+    	<div class="offiecTop">
+    		<div class="office_logo"> <img src="../images/logo/logo2.jpg"></div>
+        <div class="office_adress">
+       	신한은행 110-221-461256<br>
+       	예금주 : 김세엽 
+        <br>(주)Yeopse<br>
+        (153-759) 서울시 관악구 신림로 68길 28-6 월드오피스텔 303호</div>
+        <div class="shopping_info">
+        			<strong>고객만족센터</strong><br>
+					☎070-1236-4562<br>
+					<strong>평일</strong>오전 09:00 ~ 오후 06:00<br>
+					<strong>점심</strong>오후 12:00 ~ 오후 01:00<br>
+					휴무일요일 휴무<br>
+		</div>
+        
+    	</div>
+        <div class="copyright">COPYRIGHT © 2021 김세엽. ALL RIGHTS RESERVED.</div>
+    </footer>
+</body>
+</html>

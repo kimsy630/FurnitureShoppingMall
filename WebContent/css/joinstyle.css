@@ -1,0 +1,80 @@
+@charset "UTF-8";
+header {
+    width:100%;
+	max-width:1200px;
+    height:300px;
+}
+/* #content {
+    width:100%;
+    max-width:1200px; 
+    height:500px; 
+    margin:0 auto;
+} */
+
+#content .signupInfo {
+    width:100%;
+    max-width:1200px; 
+}
+#content .signupInfo legend{
+    width:100%;
+    max-width:1200px;
+	font-weight: bolder;
+	font-size:2em;
+    border-bottom: 3px solid black;
+}
+#content .signupInfo table{
+    width:100%;
+    max-width:1200px;
+    height:
+}
+.firstInput{
+	margin-left:2%;
+	height:20px;
+}
+#content .signupInfo table tr td{
+	height:50px;
+}
+#content .signupInfo table tr td:first-child{
+	background-color: #fbfafa;
+	padding-left: 20px;
+}
+#content .signupInfo table tr:not(:nth-child(18)):not(:first-child) td:first-child{
+	width:200px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+#content .signupInfo table tr:not(:nth-child(18)):not(:first-child) td:nth-child(2){
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+}
+#content .signupInfo table tr:first-child td:first-child{
+    /* border-top: 4px solid black; */
+    border-bottom: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+#content .signupInfo table tr:first-child td:nth-child(2){
+    /* border-top: 4px solid black; */
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+}
+#content .signupInfo table tr:nth-child(18) td{
+	text-align: center;
+    border-bottom: 3px solid black;
+}
+#content .signupInfo table tr:nth-child(18) input{
+	width:120px;
+	height:40px;
+	font-size: large;
+	font-weight: lighter;
+	color:black;
+	background-color:white;
+    border: 1px solid black;
+}
+#content .signupInfo table tr:not(nth-child(18)) input{
+    border: 1px solid #cccccc;
+}
+#content .signupInfo table tr:nth-child(18) input:hover{
+	background-color: #43495a;
+}
